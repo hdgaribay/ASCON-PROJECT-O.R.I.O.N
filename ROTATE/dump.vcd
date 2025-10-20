@@ -1,0 +1,33 @@
+$date
+	Fri Oct 17 19:01:35 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module testbench $end
+$var wire 64 ! out [63:0] $end
+$var reg 6 " loop [5:0] $end
+$var reg 64 # x [63:0] $end
+$scope module u1 $end
+$var wire 6 $ l [5:0] $end
+$var wire 64 % out [63:0] $end
+$var wire 64 & x [63:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b1000000001000000000011000000011000000000000000000000000000000000 &
+b100000000100000000001100000001100000000000000 %
+b10011 $
+b1000000001000000000011000000011000000000000000000000000000000000 #
+b10011 "
+b100000000100000000001100000001100000000000000 !
+$end
+#10000
