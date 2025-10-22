@@ -1,6 +1,6 @@
 
 /*
-Assosciated data processing; b round permutation
+Associated data processing; b round permutation
 */
 module associated_data(x0, x1, x2, x3, x4,  y0, y1, y2, y3, y4, d0, d1, d2);
 	input [63:0] x0, x1, x2, x3, x4,  d0, d1, d2; // 320 bit state and 192 bit AD
