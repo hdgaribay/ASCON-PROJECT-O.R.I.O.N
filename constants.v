@@ -1,6 +1,8 @@
-module constants(index, out);
+module constants
+	(
 	input [3:0] index;
-	output reg [63:0] out; // RC[r] = (0xF0-r*0x0F) for r = 0..15
+	output reg [63:0] out
+	);
 	always@(*)begin
 		case(index)
 			0: out = 64'h00000000000000f0;
