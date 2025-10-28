@@ -1,10 +1,13 @@
 module decrypt
 (
-input [63:0] x0, x1, x2, x3, x4; ///state in
-input [63:0] cyp0, cyp1; ///two ciphertext blocks
-output [63:0] pln0, pln1; ///two plaintext blocks (now outputs)
+input [63:0] x0, x1, x2, x3, x4, ///state in
+input [63:0] cyp0, cyp1, ///two ciphertext blocks
+output [63:0] pln0, pln1, ///two plaintext blocks (now outputs)
 output[63:0] y0,y1,y2,y3,y4 ///state out
 );
+
+wire [63:0] x0_a, x0_b;
+
 
 // block 0
 assign x0_a = x0 ^ cyp0; //absorb CT0 into rate
