@@ -1,6 +1,7 @@
-module final(IV, k0, k1, n0, n1, y0, y1, y2, y3, y4, key0, key1);
-	input [63:0] IV, k0, k1, n0, n1, key0, key1;
-	output [63:0] y0, y1, y2, y3, y4;
+module final(	
+  input [63:0] IV, k0, k1, n0, n1, key0, key1,
+	output [63:0] y0, y1, y2, y3, y4
+            );
 	wire [63:0] t0, t1, t2, t3, t4;
 	assign t1 = k0^key0;
 	assign t2 = k1^key1;

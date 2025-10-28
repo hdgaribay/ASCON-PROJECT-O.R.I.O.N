@@ -1,5 +1,4 @@
-module constants
-	(
+module constants(
 	input [3:0] index,
 	output reg [63:0] out
 	);

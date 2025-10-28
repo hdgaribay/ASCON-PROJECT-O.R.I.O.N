@@ -6,7 +6,7 @@ module demo (
   // Initialization
   wire [63:0] s00, s10, s20, s30, s40;
 
-  initialization u0 (
+  initialization u0(
     .IV   (x0),
     .k0   (x1),
     .k1   (x2),
@@ -16,9 +16,7 @@ module demo (
     .y1   (s10),
     .y2   (s20),
     .y3   (s30),
-    .y4   (s40),
-    .key0 (x1),
-    .key1 (x2)
+    .y4   (s40)
   );
 
 
@@ -28,7 +26,7 @@ module demo (
   associated_data u2 (
     .x0 (s00), .x1 (s10), .x2 (s20), .x3 (s30), .x4 (s40),
     .y0 (s01), .y1 (s11), .y2 (s21), .y3 (s31), .y4 (s41),
-    .d0 (d0),  .d1 (d1),  .d2 (d2)
+    .ad0 (d0),  .ad1 (d1),  .ad2 (d2)
   );
 
 
@@ -75,9 +73,7 @@ module demo (
     .y1   (s14),
     .y2   (s24),
     .y3   (s34),
-    .y4   (s44),
-    .key0 (x1),
-    .key1 (x2)
+    .y4   (s44)
   );
 
   wire [63:0] s05, s15, s25, s35, s45;
@@ -85,7 +81,7 @@ module demo (
   associated_data u6 (
     .x0 (s04), .x1 (s14), .x2 (s24), .x3 (s34), .x4 (s44),
     .y0 (s05), .y1 (s15), .y2 (s25), .y3 (s35), .y4 (s45),
-    .d0 (d0),  .d1 (d1),  .d2 (d2)
+    .ad0 (d0),  .ad1 (d1),  .ad2 (d2)
   );
 
   wire [63:0] s06, s16, s26, s36, s46;
